@@ -1,7 +1,7 @@
 # Manage PortProxy Script
 
 ## Description
-This script, managing port proxy and permissions for inbound rules on firewall. It creates port forwarding rules for the specified target IP and port list. Also it creates Inbound Rule on firewall for every forwarding ports and allows to accessing ports. It can delete rules created with the "Remove" parameter. The script should be run with administrator privileges.
+This script, managing port proxy and permissions for inbound rules in the firewall on Windows operating systems. It creates port forwarding rules for the specified target IP and port list. Also it creates Inbound Rule on firewall for every forwarding ports and allows to accessing ports. It can delete rules created with the "Remove" parameter. The script should be run with administrator privileges.
 
 ## Parameters
 ### Action
