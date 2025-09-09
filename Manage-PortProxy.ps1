@@ -1,30 +1,4 @@
-<#
-.SYNOPSIS
-    Windows üzerinde Netsh PortProxy ve Güvenlik Duvarı kurallarını otomatik olarak ekler veya kaldırır.
 
-.DESCRIPTION
-    Bu script, belirtilen bir hedef IP adresine ve port listesine göre port yönlendirme (portproxy) kuralları oluşturur.
-    Ayrıca, yönlendirilen her port için Windows Güvenlik Duvarı'nda bir "Gelen Kuralı" (Inbound Rule) oluşturarak
-    bu portlara erişime izin verir. 'Remove' parametresi ile oluşturulan bu kuralları temizler.
-    Script'in yönetici (Administrator) haklarıyla çalıştırılması gerekmektedir.
-
-.PARAMETER Action
-    Yapılacak işlem. 'Add' (eklemek için) veya 'Remove' (kaldırmak için).
-
-.PARAMETER TargetIP
-    Portların yönlendirileceği hedef makinenin IP adresi.
-
-.PARAMETER Ports
-    İşlem yapılacak portların listesi. Virgülle ayrılmış olarak girilmelidir (örn: 80,443,8080).
-
-.EXAMPLE
-    # 192.168.1.100 IP'sine 80, 443 ve 8080 portları için kuralları EKLEME
-    .\Manage-PortProxy.ps1 -Action Add -TargetIP 192.168.1.100 -Ports 80,443,8080
-
-.EXAMPLE
-    # 80, 443 ve 8080 portları için daha önce oluşturulmuş kuralları KALDIRMA
-    .\Manage-PortProxy.ps1 -Action Remove -TargetIP 192.168.1.100 -Ports 80,443,8080
-#>
 [CmdletBinding()]
 param(
     [Parameter(Mandatory=$true)]
