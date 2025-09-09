@@ -17,12 +17,12 @@ The action to be taken of ports list.
 ### Example Usage Case: 
 Add rules for ports 80, 443 and 8080 to the 192.168.1.100 IP address
 ```
-   .\\Manage-PortProxy.ps1 -Action Add -TargetIP 192.168.1.100 -Ports 80,443,8080
+   .\Manage-PortProxy.ps1 -Action Add -TargetIP 192.168.1.100 -Ports 80,443,8080
 ```
 
 Remove rules for ports 80, 443 and 8080 to the 192.168.1.100 IP address
 ```
-   .\\Manage-PortProxy.ps1 -Action Remove -TargetIP 192.168.1.100 -Ports 80,443,8080
+   .\Manage-PortProxy.ps1 -Action Remove -TargetIP 192.168.1.100 -Ports 80,443,8080
 ```
 
 
